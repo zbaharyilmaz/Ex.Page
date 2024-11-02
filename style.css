@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 header{
     background-color: background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
-    height:100px;
+    height: 80px;
     position: relative;
     padding:.5rem;
 }
@@ -19,22 +21,48 @@ header a img{
     position:absolute;
     top:10px;
     left:10px;
+    border-radius: 50%;
     
 }
 /* img i padding right garip ve margin ile ortalamadım. */
 header .sign-in a{
     text-decoration: none;
     color:#0b2451;
+    font-weight:600;
+    font-family: "DynaPuff", system-ui;
+
 }
 /* a lara renk vermemiz gerekti. */
 
 header .sign-in{
     position:absolute;
     top:20px;
-    right:5px;
+    right:10px;
 }
 section{
     position:absolute;
     top:10px;
     right:5px;
+}
+header .sign-in a:hover{
+    border-bottom: 2px solid #0b2451;;
+}
+nav.sticky{
+    padding: 2rem;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    text-align: center;
+}
+
+/* neden üstte height burda padding verdik? */
+/* nav içindeki sticky nav .sticky
+class ı sticky olan nav nav.sticky */
+nav.sticky a{
+   text-decoration: none;
+   margin: 0.8rem;
+   color: #0b2451;
+   font-family: "DynaPuff", system-ui;
+}
+nav.sticky a:hover{
+    color: azure;
 }
